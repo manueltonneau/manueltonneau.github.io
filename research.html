@@ -65,7 +65,71 @@
 </head>
 <body>
 
+<!-- Primary Page Layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <div class="container">
+   <section class="header">
+      <div class="row">
+      <div class="three columns">
+         <a href="/"><img title="" class="u-max-full-width" src='/assets/profile-pics/profile.png'></a>
+      </div>
+      <div class="nine columns main-description">
+            <h1>Manuel Tonneau</h1>
+            <p>Ph.D. student in Social Data Science, University of Oxford</p>
+            <p>Data Science Consultant, The World Bank</p>
+            <p>Member of the Open Networks and Big Data Lab, New York University</p>
+
+
+            <p>manuel.tonneau@oii.ox.ac.uk</p>
+            <p>
+                           <span onclick="window.open('https://twitter.com/ManuelTonneau')" style="cursor: pointer">
+               <i class="fa fa-twitter" aria-hidden="true"></i>
+            </span>
+<!--                           <span onclick="window.open('https://piaille.fr/@manueltonneau')" style="cursor: pointer">-->
+<!--               <i class="fa-brands fa-mastodon" aria-hidden="true"></i>-->
+<!--            </span>-->
+            <span onclick="window.open('https://www.linkedin.com/in/manuel-tonneau/')" style="cursor: pointer">
+               <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            </span>
+            <span onclick="window.open('https://github.com/manueltonneau')" style="cursor: pointer">
+               <i class="fa fa-github" aria-hidden="true"></i>
+            </span>
+                           <span onclick="window.open('https://scholar.google.co.uk/citations?user=RIB-aogAAAAJ&hl=en')" style="cursor: pointer">
+               <i class="ai ai-google-scholar" aria-hidden="true"></i>
+            </span>
+
+<!--            <span onclick="window.open('https://twitter.com/ManuelTonneau')" style="cursor: pointer">-->
+<!--               <i class="fa fa-twitter" aria-hidden="true"></i>-->
+<!--            </span>-->
+            </p>
+      </div>
+      </div>
+   </section>
+   <a name="bio"></a>
+   <div class="navbar-spacer"></div>
+   <nav class="navbar">
+      <div class="container">
+         <ul class="navbar-list">
+            <li class="navbar-item"><a class="navbar-link" href=/index.html#bio>Bio</a></li>
+             <li class="navbar-item"><a class="navbar-link" href=/index.html#news>News</a></li>
+            <li class="navbar-item"><a class="navbar-link" href=/research.html>Publications</a></li>
+<!--            <li class="navbar-item"><a class="navbar-link" href=/index.html#talks>Talks</a></li>-->
+<!--            <li class="navbar-item"><a class="navbar-link" href=/index.html#teaching>Teaching</a></li>-->
+            <!--<li class="navbar-item"><a class="navbar-link" href=/assets/cv/cv.pdf>CV</a></li>-->
+         </ul>
+      </div>
+   </nav>
+   <script>
+      function unhide(divID) {
+      console.log(divID)
+      var item = document.getElementById(divID);
+      console.log('hi')
+      if (item){
+         item.className=(item.className=='hidden')?'unhidden':'hidden';
+      }
+      }
+   </script>
+
 
 <!--        </div>-->
 <!--    ========== PUBLICATIONS ==========-->
