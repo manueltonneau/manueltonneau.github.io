@@ -35,11 +35,18 @@
    .pub-image {
       flex-shrink: 0;
       margin-right: 20px;
+      width: 100px; /* Set the width of the square */
+      height: 100px; /* Set the height of the square */
+      overflow: hidden; /* Ensure anything outside the bounds is hidden */
+      display: flex; /* Center the image inside the square */
+      align-items: center; /* Center the image vertically */
+      justify-content: center; /* Center the image horizontally */
    }
 
    .pub-image img {
-      max-height: 150px; /* Adjust as needed */
-      width: auto;
+      width: 100%; /* Ensure the image covers the square */
+      height: 100%; /* Ensure the image covers the square */
+      object-fit: cover; /* Crop the image to fit within the square */
    }
 
    .pub-text {
@@ -47,7 +54,7 @@
    }
 
    .pub-text .title {
-      font-size: 18px;
+      font-size: 16px; /* Lowered font size */
       font-weight: bold;
       margin-bottom: 5px;
    }
@@ -60,6 +67,7 @@
       margin-right: 10px;
    }
 </style>
+
 <!-- JQuery
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <script src=/libs/external/jquery-3.1.1.min.js></script>
