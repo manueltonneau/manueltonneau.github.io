@@ -23,6 +23,43 @@
 <link rel="stylesheet" href=/libs/external/skeleton/skeleton.css>
 <link rel="stylesheet" href=/libs/custom/my_css.css>
 
+    <!-- Custom CSS for Publications Section
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<style>
+   .pub-entry {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 20px;
+   }
+
+   .pub-image {
+      flex-shrink: 0;
+      margin-right: 20px;
+   }
+
+   .pub-image img {
+      max-height: 150px; /* Adjust as needed */
+      width: auto;
+   }
+
+   .pub-text {
+      flex-grow: 1;
+   }
+
+   .pub-text .title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 5px;
+   }
+
+   .pub-text p {
+      margin: 5px 0;
+   }
+
+   .paper-buttons .button {
+      margin-right: 10px;
+   }
+</style>
 <!-- JQuery
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <script src=/libs/external/jquery-3.1.1.min.js></script>
@@ -162,20 +199,20 @@
 
       </ul>
 
-             <!-- Paper 1 -->
-      <div class="paper pub-entry">
-         <div class="pub-image">
-            <img src="assets/images/ic2s2_2023.jpg" alt="NaijaHate" max-height="300px" width="300px">
-         </div>
-         <div class="pub-text">
-            <p class="title"><b>NaijaHate: Evaluating Hate Speech Detection on Nigerian Twitter Using Representative Data</b></p>
-            <p><b>Manuel Tonneau</b>, Pedro Vitor Quinta de Castro, Karim Lasri, Ibrahim Farouq, Lakshminarayanan Subramanian, Victor Orozco-Olvera, Samuel Fraiberger</p>
-            <p><i>ACL'24: Annual Meeting of the Association for Computational Linguistics</i></p>
-            <div class="paper-buttons">
-               <a class="button" href="https://arxiv.org/abs/2403.19260" target="_blank">📜 Paper</a>
-            </div>
-         </div>
-      </div>
+      <!-- Paper 1 -->
+          <div class="paper pub-entry">
+             <div class="pub-image">
+                <img src="path/to/image1.png" alt="NaijaHate" style="max-height: 150px; width: auto;">
+             </div>
+             <div class="pub-text">
+                <p class="title"><b>NaijaHate: Evaluating Hate Speech Detection on Nigerian Twitter Using Representative Data</b></p>
+                <p><b>Manuel Tonneau</b>, Pedro Vitor Quinta de Castro, Karim Lasri, Ibrahim Farouq, Lakshminarayanan Subramanian, Victor Orozco-Olvera, Samuel Fraiberger</p>
+                <p><i>ACL'24: Annual Meeting of the Association for Computational Linguistics</i></p>
+                <div class="paper-buttons">
+                   <a class="button" href="https://arxiv.org/abs/2403.19260" target="_blank">📜 Paper</a>
+                </div>
+             </div>
+          </div>
 
       <div class="tab-content">
          <div class="tab-pane active" id="papers-all">
