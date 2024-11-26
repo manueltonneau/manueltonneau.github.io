@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Basic Page Needs
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta charset="utf-8">
+<title>Manuel Tonneau | Publications </title>
+<meta name="description" content="Publications of Manuel Tonneau">
+<meta name="author" content="Manuel Tonneau">
+
+<!-- Mobile Specific Metas
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- FONT
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+
+<!-- CSS
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link rel="stylesheet" href=/libs/external/skeleton/normalize.css>
+<link rel="stylesheet" href=/libs/external/skeleton/skeleton.css>
+<link rel="stylesheet" href=/libs/custom/my_css.css>
+
+    <!-- Custom CSS for Publications Section
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<style>
+   .pub-entry {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 20px;
+   }
+
+   .pub-image {
+      flex-shrink: 0;
+      margin-right: 20px;
+      width: 150px; /* Set the width of the square */
+      height: 100px; /* Set the height of the square */
+      overflow: hidden; /* Ensure anything outside the bounds is hidden */
+      display: flex; /* Center the image inside the square */
+      align-items: center; /* Center the image vertically */
+      justify-content: center; /* Center the image horizontally */
+   }
+
+   .pub-image img {
+      width: 100%; /* Ensure the image covers the square */
+      height: 100%; /* Ensure the image covers the square */
+      object-fit: contain;
+   }
+
+   .pub-text {
+      flex-grow: 1;
+   }
+
+   .pub-text .title {
+      font-size: 16px; /* Lowered font size */
+      font-weight: bold;
+      margin-bottom: 5px;
+   }
+
+   .pub-text p {
+      margin: 5px 0;
+   }
+
+   .paper-buttons .button {
+      margin-right: 10px;
+   }
+</style>
+
+<!-- JQuery
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script src=/libs/external/jquery-3.1.1.min.js></script>
+
+<!-- Font-Awesome
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link rel="stylesheet" href=/libs/external/font-awesome-4.7.0/css/font-awesome.min.css>
+
+<!-- Academic-Icons
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link rel="stylesheet" href=/libs/external/academicons-1.8.6/css/academicons.min.css>
+
+<!-- Skeleton tabs
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link rel="stylesheet" href=/libs/external/skeleton_tabs/skeleton-tabs.css>
+<script src=/libs/external/skeleton_tabs/skeleton-tabs.js></script>
+
+<!-- Timeline
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link rel="stylesheet" href=/libs/external/timeline.css>
+
+<!-- Scripts
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!--<link rel="stylesheet" href=/libs/external/github-prettify-theme.css>-->
+<script src=/libs/custom/my_js.js></script>
+
+<!-- Favicon
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link rel="icon" type="image/png" href=/libs/icon.png>
+<link rel="shortcut icon" type="image/png" href=/libs/icon.png>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-7YM94T4RDX');
+</script>
+
+
+</head>
+<body>
+
+<!-- Primary Page Layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div class="container">
+   <section class="header">
+      <div class="row">
+      <div class="three columns">
+         <a href="/"><img title="" class="u-max-full-width" src='/assets/profile-pics/profile.png'></a>
+      </div>
+      <div class="nine columns main-description">
+            <h1>Manuel Tonneau</h1>
+            <p>Ph.D. student in Social Data Science, University of Oxford</p>
+            <p>Consultant, Development Impact (DIME), The World Bank</p>
+            <p>Member of the Open Networks and Big Data Lab, New York University</p>
+
+
+            <p>manuel.tonneau@oii.ox.ac.uk</p>
+            <p> </p>
+            <p>Social:
+                           <span onclick="window.open('https://twitter.com/ManuelTonneau')" style="cursor: pointer">
+               <i class="fa fa-twitter" aria-hidden="true"></i>
+            </span>
+                                           <span onclick="window.open('https://bsky.app/profile/manueltonneau.bsky.social')" style="cursor: pointer">
+               <img src="/assets/images/bluesky.png" style="width:20px;"/>
+            </span>
+                           <span onclick="window.open('https://piaille.fr/@manueltonneau')" style="cursor: pointer">
+               <img src="/assets/images/mastodon.svg" style="width:20px;"/>
+            </span>
+                            <span onclick="window.open('https://www.linkedin.com/in/manuel-tonneau/')" style="cursor: pointer">
+               <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            </span>
+                </p>
+          <p> Resources:
+            <span onclick="window.open('https://github.com/manueltonneau')" style="cursor: pointer">
+               <i class="fa fa-github" aria-hidden="true"></i>
+            </span>
+                          <span onclick="window.open('https://huggingface.co/manueltonneau')" style="cursor: pointer">
+               <img src="/assets/images/hf.svg" style="width:20px;"/>
+            </span>
+              </p>
+          <p> Papers:
+                           <span onclick="window.open('https://scholar.google.co.uk/citations?user=RIB-aogAAAAJ&hl=en')" style="cursor: pointer">
+               <i class="ai ai-google-scholar" aria-hidden="true"></i>
+            </span>
+                           <span onclick="window.open('https://www.semanticscholar.org/author/Manuel-Tonneau/2159207178')" style="cursor: pointer">
+               <img src="/assets/images/semantic.png" style="width:20px;"/>
+            </span>
+<!--            <span onclick="window.open('https://twitter.com/ManuelTonneau')" style="cursor: pointer">-->
+<!--               <i class="fa fa-twitter" aria-hidden="true"></i>-->
+<!--            </span>-->
+            </p>
+      </div>
+      </div>
+   </section>
+   <a name="bio"></a>
+   <div class="navbar-spacer"></div>
+   <nav class="navbar">
+      <div class="container">
+         <ul class="navbar-list">
+            <li class="navbar-item"><a class="navbar-link" href=/index.html#bio>Bio</a></li>
+             <li class="navbar-item"><a class="navbar-link" href=/index.html#news>News</a></li>
+            <li class="navbar-item"><a class="navbar-link" href=/research.html>Publications</a></li>
+<!--            <li class="navbar-item"><a class="navbar-link" href=/index.html#talks>Talks</a></li>-->
+<!--            <li class="navbar-item"><a class="navbar-link" href=/index.html#teaching>Teaching</a></li>-->
+            <!--<li class="navbar-item"><a class="navbar-link" href=/assets/cv/cv.pdf>CV</a></li>-->
+         </ul>
+      </div>
+   </nav>
+   <script>
+      function unhide(divID) {
+      console.log(divID)
+      var item = document.getElementById(divID);
+      console.log('hi')
+      if (item){
+         item.className=(item.className=='hidden')?'unhidden':'hidden';
+      }
+      }
+   </script>
+
+
+<!--        </div>-->
+<!--    ========== PUBLICATIONS ==========-->
+   <span class="anchor" id="publications"></span>
+   <div class="docs-section">
+
+      <h4>Publications</h4>
+
+         <p>Most recent list on <a href="https://scholar.google.com/citations?user=RIB-aogAAAAJ&hl=en" target="_blank">Google Scholar</a> or <a href="https://www.semanticscholar.org/author/Manuel-Tonneau/2159207178" target="_blank">Semantic Scholar</a>.<br/>
+          <sup>‡</sup> indicates equal contribution.
+          </p>
+      <ul class="tab-nav">
+<!--         <li><div class="button active" data-ref="#papers-selected">Selected</div></li>-->
+         <li><div class="button" data-ref="#papers-all">All</div></li>
+<!--         <li><div class="button published" data-ref="#papers-published">Published</div></li>-->
+<!--         <li><div class="button working" data-ref="#papers-selected">Working papers</div></li>-->
+
+      </ul>
+
+    <div class="tab-content">
+       <div class="tab-pane active" id="papers-all">
+          <span class="anchor" id="JKOICNN"></span>
+
+          <!-- paper 1 -->
+          <div class="pub-entry">
+             <div class="pub-image">
+                <img src="assets/images/papers/indian_bhed.png" alt="Indian-BhED">
+             </div>
+             <div class="pub-text">
+                <p class="title"><b>Indian-BhED: A Dataset for Measuring India-Centric Biases in Large Language Models</b></p>
+                <p>Khyati Khandelwal, <b>Manuel Tonneau</b>, Andrew M. Bean, Hannah Rose Kirk, Scott A. Hale</p>
+                <p><i>GoodIT '24: Proceedings of the 2024 International Conference on Information Technology for Social Good</i></p>
+                <div class="paper-buttons">
+                   <a class="button" href="https://dl.acm.org/doi/10.1145/3677525.3678666" target="_blank">📜 Paper</a>
+                </div>
+             </div>
+          </div>
+
+          <!-- paper 1 -->
+          <div class="pub-entry">
+             <div class="pub-image">
+                <img src="assets/images/papers/naijahate.png" alt="NaijaHate">
+             </div>
+             <div class="pub-text">
+                <p class="title"><b>NaijaHate: Evaluating Hate Speech Detection on Nigerian Twitter Using Representative Data</b></p>
+                <p><b>Manuel Tonneau</b>, Pedro Vitor Quinta de Castro, Karim Lasri, Ibrahim Farouq, Lakshminarayanan Subramanian, Victor Orozco-Olvera, Samuel Fraiberger</p>
+                <p><i>ACL'24: Annual Meeting of the Association for Computational Linguistics</i></p>
+                <div class="paper-buttons">
+                   <a class="button" href="https://aclanthology.org/2024.acl-long.488/" target="_blank">📜 Paper</a>
+                    <a class="button" href="https://x.com/ManuelTonneau/status/1821125918691123289" target="_blank">🐦 Twitter Thread</a>
+                </div>
+             </div>
+          </div>
+
+          <!-- paper 2 -->
+          <div class="pub-entry">
+             <div class="pub-image">
+                <img src="assets/images/papers/survey.png" alt="From Languages to Geographies">
+             </div>
+             <div class="pub-text">
+                <p class="title"><b>From Languages to Geographies: Towards Evaluating Cultural Bias in Hate Speech Datasets</b></p>
+                <p><b>Manuel Tonneau</b>, Diyi Liu, Samuel Fraiberger, Ralph Schroeder, Scott A. Hale, Paul Röttger</p>
+                <p><i>WOAH'24: Workshop on Online Abuse and Harms</i></p>
+                <div class="paper-buttons">
+                   <a class="button" href="https://aclanthology.org/2024.woah-1.23/" target="_blank">📜 Paper</a>
+                   <a class="button" href="https://x.com/ManuelTonneau/status/1793628251455389733" target="_blank">🐦 Twitter Thread</a>
+                </div>
+             </div>
+          </div>
+
+          <!-- paper 3 -->
+          <div class="pub-entry">
+             <div class="pub-image">
+                <img src="assets/images/papers/job_offers.png" alt="280 Characters to Employment">
+             </div>
+             <div class="pub-text">
+                <p class="title"><b>280 Characters to Employment: Using Twitter to Quantify Job Vacancies</b></p>
+                <p>Boris Sobol, <b>Manuel Tonneau</b>, Samuel Fraiberger, Do Lee, Nir Grinberg</p>
+                <p><i>ICWSM'24: International AAAI Conference on Web and Social Media</i></p>
+                 <div class="paper-buttons">
+                   <a class="button" href="https://ojs.aaai.org/index.php/ICWSM/article/view/31403" target="_blank">📜 Paper</a>
+                </div>
+             </div>
+          </div>
+
+          <!-- paper 4 -->
+          <div class="pub-entry">
+             <div class="pub-image">
+                <img src="assets/images/papers/demographic_inference.png" alt="Large-Scale Demographic Inference">
+             </div>
+             <div class="pub-text">
+                <p class="title"><b>Large-Scale Demographic Inference of Social Media Users in a Low-Resource Scenario</b></p>
+                <p>Karim Lasri<sup>‡</sup>, <b>Manuel Tonneau<sup>‡</sup></b>, Haaya Naushan, Niyati Malhotra, Ibrahim Farouq, Victor Orozco, Samuel Fraiberger</p>
+                <p><i>ICWSM'23: International AAAI Conference on Web and Social Media</i></p>
+                <div class="paper-buttons">
+                   <a class="button" href="https://ojs.aaai.org/index.php/ICWSM/article/view/22165" target="_blank">📜 Paper</a>
+                   <a class="button" href="https://x.com/ManuelTonneau/status/1665949249559752705" target="_blank">🐦 Twitter Thread</a>
+                </div>
+             </div>
+          </div>
+
+          <!-- paper 5 -->
+          <div class="pub-entry">
+             <div class="pub-image">
+                <img src="assets/images/papers/employment_detection.png" alt="Multilingual Detection of Personal Employment Status">
+             </div>
+             <div class="pub-text">
+                <p class="title"><b>Multilingual Detection of Personal Employment Status on Twitter</b></p>
+                <p><b>Manuel Tonneau</b>, Dhaval Adjodah, Joao Palotti, Nir Grinberg, Samuel Fraiberger</p>
+                <p><i>ACL'22: Annual Meeting of the Association for Computational Linguistics</i></p>
+                <div class="paper-buttons">
+                   <a class="button" href="https://aclanthology.org/2022.acl-long.453/" target="_blank">📜 Paper</a>
+                   <a class="button" href="https://x.com/ManuelTonneau/status/1519304277252001793" target="_blank">🐦 Twitter Thread</a>
+                </div>
+             </div>
+          </div>
+
+       </div>
+    </div>
+
+</div>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
