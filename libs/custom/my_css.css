@@ -106,7 +106,7 @@ a:hover {
 @media (min-width: 550px) {
   .header {
     margin-top: 5rem; }
-  /* Align the photo to the exact height of the name + titles block */
+  /* Align the photo to the height of the name + titles block */
   .header .row {
     display: flex;
     align-items: stretch;
@@ -116,16 +116,16 @@ a:hover {
     float: none;
     margin-left: 0; }
   .header .three.columns {
-    width: auto;
     flex: 0 0 auto;
-    aspect-ratio: 1 / 1;
+    width: 150px;
     position: relative; }
   .header .three.columns img {
     position: absolute;
     inset: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; }
+    object-fit: cover;
+    object-position: top center; }
   .header .nine.columns {
     flex: 1 1 auto;
     width: auto;
