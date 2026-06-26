@@ -38,7 +38,8 @@ body {
 
 h4 {
   letter-spacing: .1rem;
-  font-size: 1.8rem; }
+  font-size: 1.8rem;
+  font-weight: 700; }
 .button {
   /* display: inline-block;
   height: 25px; */
@@ -88,9 +89,11 @@ a:hover {
     position:relative;}
 .main-description h1 {
   margin-bottom: 0px;
-  font-size: 2.8rem; }
+  font-size: 2.8rem;
+  font-weight: 700; }
 .main-description p {
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+  font-size: 16px; }
 .main-description .fa {
   font-size: 22px;
   display: inline !important;
