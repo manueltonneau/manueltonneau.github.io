@@ -57,6 +57,34 @@ a:hover {
   margin-top: 60px;
   margin-bottom: 25px;
   text-align: left; }
+/* Social icon row under the titles (adapts to light/dark via currentColor) */
+.main-description .social-links {
+  margin-top: 14px;
+  margin-bottom: 0;
+  line-height: 1; }
+.main-description .social-links a {
+  color: var(--text);
+  margin-right: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none; }
+.main-description .social-links a:hover {
+  color: var(--link); }
+.main-description .social-links .fa,
+.main-description .social-links .ai {
+  font-size: 21px;
+  vertical-align: middle; }
+.main-description .social-links .bsky-icon {
+  width: 19px;
+  height: 19px;
+  fill: currentColor;
+  vertical-align: middle; }
+.main-description .social-links .hf-icon {
+  height: 21px;
+  width: auto;
+  vertical-align: middle; }
+html[data-theme="dark"] .main-description .social-links .hf-icon {
+  filter: invert(1) hue-rotate(180deg); }
 .hidden {
     display: none; }
 .unhidden {
