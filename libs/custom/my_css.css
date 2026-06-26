@@ -74,17 +74,12 @@ a:hover {
 .main-description .social-links .ai {
   font-size: 21px;
   vertical-align: middle; }
-.main-description .social-links .bsky-icon {
-  width: 19px;
-  height: 19px;
+.main-description .social-links .bsky-icon,
+.main-description .social-links .hf-icon {
+  width: 20px;
+  height: 20px;
   fill: currentColor;
   vertical-align: middle; }
-.main-description .social-links .hf-icon {
-  height: 21px;
-  width: auto;
-  vertical-align: middle; }
-html[data-theme="dark"] .main-description .social-links .hf-icon {
-  filter: invert(1) hue-rotate(180deg); }
 .hidden {
     display: none; }
 .unhidden {
