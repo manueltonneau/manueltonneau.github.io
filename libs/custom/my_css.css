@@ -1,3 +1,41 @@
+/* ===== Light / dark theme ===== */
+:root {
+  --bg: #ffffff;
+  --text: #222222;
+  --muted: rgba(0, 0, 0, 0.45);
+  --border: #eeeeee;
+  --link: #A4243B;
+  --link-hover: #861C30;
+  --navbar-bg: #ffffff;
+  --navbar-link: #222222; }
+html[data-theme="dark"] {
+  --bg: #16181c;
+  --text: #e6e6e6;
+  --muted: rgba(255, 255, 255, 0.5);
+  --border: #2c2f34;
+  --link: #e58fa0;
+  --link-hover: #f0aab6;
+  --navbar-bg: #16181c;
+  --navbar-link: #e6e6e6; }
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.2s ease, color 0.2s ease; }
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: var(--navbar-link);
+  line-height: 6.5rem;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  text-transform: none;
+  letter-spacing: 0; }
+.theme-toggle:hover {
+  color: var(--link); }
+
 h4 {
   letter-spacing: .1rem; }
 .button {
@@ -12,9 +50,9 @@ h4 {
   max-width: 800px; }
 /* Links — readable academic crimson */
 a {
-  color: #A4243B; }
+  color: var(--link); }
 a:hover {
-  color: #861C30; }
+  color: var(--link-hover); }
 .header {
   margin-top: 60px;
   margin-bottom: 25px;
@@ -58,7 +96,7 @@ a:hover {
   letter-spacing: .2rem;
   font-weight: 600; }
 .docs-section {
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--border);
   padding: 1rem 0;
   margin-bottom: 0;}
 .docs-section h4 {
@@ -75,8 +113,8 @@ a:hover {
   margin-bottom: 0; }
 .footer {
   text-align: center;
-  color: rgba(0, 0, 0, 0.4);
-  border-top: 1px solid #eee;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
   padding: 15px 0 40px 0;
   margin-bottom: 0;}
 .navbar {
@@ -131,7 +169,8 @@ a:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: top center; }
+    object-position: top center;
+    border-radius: 14px; }
   .header .nine.columns {
     flex: 1 1 auto;
     width: auto;
@@ -150,10 +189,10 @@ a:hover {
     display: block;
     width: 100%;
     height: 6.5rem;
-    background: #fff;
+    background: var(--navbar-bg);
     z-index: 99;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee; }
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border); }
   .navbar-spacer {
     display: none; }
   .navbar > .container {
@@ -173,7 +212,7 @@ a:hover {
     margin-right: 35px;
     text-decoration: none;
     line-height: 6.5rem;
-    color: #222; }
+    color: var(--navbar-link); }
   .navbar-link.active {
     color: #33C3F0; }
   .has-docked-nav .navbar {

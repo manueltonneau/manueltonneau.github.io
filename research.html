@@ -96,8 +96,31 @@
 
 <!-- Favicon
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<link rel="icon" type="image/png" href=/libs/icon.png>
-<link rel="shortcut icon" type="image/png" href=/libs/icon.png>
+<link rel="icon" type="image/png" href=/assets/profile-pics/favicon.png>
+<link rel="shortcut icon" type="image/png" href=/assets/profile-pics/favicon.png>
+
+<!-- Theme (light/dark) — set early to avoid flash -->
+<script>
+  (function(){
+    try {
+      var t = localStorage.getItem('theme');
+      if(!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    } catch(e){}
+  })();
+  function toggleTheme(){
+    var root = document.documentElement;
+    var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('theme', next); } catch(e){}
+    var btn = document.getElementById('theme-toggle');
+    if(btn) btn.textContent = next === 'dark' ? '☀' : '☾';
+  }
+  document.addEventListener('DOMContentLoaded', function(){
+    var btn = document.getElementById('theme-toggle');
+    if(btn) btn.textContent = document.documentElement.getAttribute('data-theme') === 'dark' ? '☀' : '☾';
+  });
+</script>
 
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -176,6 +199,7 @@
             <li class="navbar-item"><a class="navbar-link" href=/index.html#interests>Research</a></li>
              <li class="navbar-item"><a class="navbar-link" href=/index.html#news>News</a></li>
             <li class="navbar-item"><a class="navbar-link" href=/index.html#contact>Contact</a></li>
+            <li class="navbar-item" style="float:right; margin-right:0;"><button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle dark mode">☾</button></li>
 <!--            <li class="navbar-item"><a class="navbar-link" href=/index.html#talks>Talks</a></li>-->
 <!--            <li class="navbar-item"><a class="navbar-link" href=/index.html#teaching>Teaching</a></li>-->
             <!--<li class="navbar-item"><a class="navbar-link" href=/assets/cv/cv.pdf>CV</a></li>-->
